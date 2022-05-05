@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+     <title>U.E.P Galileo Galilei</title>
+     <meta charset="utf-8">
+     <meta name="descrition" content="Pagina dedicada a la Evaluacion Sumativa I"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+     
+     <link rel="icon" href="Imagenes/logo.png">
+
+<body>
+    <div class="container">
+    <div class="cabeza">
+    <img src="Imagenes/logo2.png">
+    <?php
+    echo "<h4> Alumno: $Nombre $Apellido <br> Docente Guía:Adrian Figuera </h4> ";
+    echo "<h4 class='grado'> Año a cursar: $Grado </h4> ";
+    ?> 
+    <button onclick="salida()">Salir</button>
+</div>
+    <br> <br>
+    <hr>
+
+    <header class="showcase" id="animado">
+    <h2> Bienvenido a la casa de los sueños</h2>
+    </header>
+
+    <h2>CONTENIDO PROGRAMÁTICO</h2> <br>
+    <div class="news-cards">
+
+    <div>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/qjX4wKUoK7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="https://www.lifeder.com/wp-content/uploads/2020/09/Einstein-y-formula-min.jpg" id="animado2">
+        <h3>Física</h3>
+        <p>Cuando trabajan con números muy grandes o muy pequeños, los científicos, matemáticos e ingenieros usan notación científica para expresar esas cantidades...<a href="Fisica.html">Más aqui</a></p>
+
+        
+    </div>
+
+    <div>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/za-nxN1QCrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="http://dequimica.com/imagenes/teoria/quimica-general.jpg" id="animado3">
+        <h3>Química</h3>
+        <p>El átomo es la partícula más pequeña característica de un elemento. La dificultad para observar el átomo estimuló a muchos científicos a proponer modelos atómicos para ayudar a entender y estudiar su estructura y comportamiento... <a href="Quimica.html">Más aqui</a> </p>
+        
+    </div>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/728t4Ph4MJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="https://img3.stockfresh.com/files/d/dmitry_rukhlenko/m/52/2134775_stock-photo-old-vintage-golden-compass-on-ancient-map.jpg" id="animado4">
+        <h3>Historia Universal</h3>
+        <p>El suceso más antiguo que puede datarse en el universo que conocemos se remonta a unos 12.000 millones de años. En este primer instante, toda la energía (y todo el espacio) del universo se encontraba concentrada en un punto, que fue el origen de una gran explosión (big bang).<a href="Historia_Universal.html">Más aqui</a> </p>
+        
+    </div>
+
+    
+
+  </div>
+
+  <section class="banner3" id="animado5">
+
+    <div class="contenido">
+        <hr>
+        <img src="Imagenes/logo2.png">
+        <p>Ofreciendo excelencia y calidad en cada niño</p>
+
+    </div>
+
+  </section>
+
+</div>
+<script type="text/javascript">
+
+function salida() {
+
+    const resultado = confirm('¿Estas seguro de que deseas salir?');
+
+    if (resultado) {
+    
+    alert('Okay, si estas seguro.');
+    window.location='index.html';
+    
+    } else { 
+    
+    alert('Pareces indeciso');
+
+}
+}
+
+</script>
+<script src="main.js"></script>
+</body>
+<footer class="footer">
+    <p>Elaborado por: Ressi Figuera</p>
+  </footer>
+</html>

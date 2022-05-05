@@ -1,0 +1,78 @@
+<html lang="es">
+<head>
+     <title>U.E.P Galileo Galilei</title>
+      <meta charset="utf-8">
+     <meta name="descrition" content="Pagina dedicada a la Evaluacion Sumativa I"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="stylesheet" type="text/css" href="style.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+     <link rel="icon" href="Imagenes/logo.png">
+
+<body>
+	
+		<div class="esqueleto"> 
+	    	
+        <form method="post" action="curso.php" class="formulario" > <br>
+         <img src="Imagenes/logo2.png">
+	     <h2> ¡Ingresa a tu Contenido! </h2>
+
+	  <div class="contenido">
+	  	<div class="form__group field">
+
+			<label class="form__label" for="Nombre">Nombre</label>
+			<input type="text" class="form__field" name="Nombre" id="Nombre" required> <br> <br>
+			
+			<label class="form__label" for="Apellido">Apellido</label>
+			<input type="text" class="form__field" name="Apellido" id="Apellido" required > <br> <br>
+
+			<label class="form__label" for="Cedula">Cedula</label>
+			<input type="text" class="form__field" name="Cedula" id="Cedula" required> <br> <br>
+       </div>
+           
+            <div class="select">
+
+            <h4 class="select_grado">Año a cursar</h4>  
+			  <select name="Grado" class="Seleccione" id="Grado">
+				<option value="">Seleccione un año</option>
+			    <option value="1ero">1ero</option>
+			    <option value="2do">2do</option>
+			    <option value="3ero">3ero</option>
+			    <option value="4to">4to</option>
+			    <option value="5to">5to</option>
+			    <option value="6to">6to</option>
+            </select> 
+			<br><br>
+            </div>
+   
+           
+            <input type="submit" name="Ingresar" value="Ingresar" class="boton" onclick="bienvenidos()">
+           
+
+</div>
+</form>	
+
+</div>
+
+
+<script type="text/javascript">
+	
+function bienvenidos() {
+	var Nombre = document.getElementById('Nombre').value;
+	var Apellido = document.getElementById('Apellido').value;
+	var Cedula = document.getElementById('Cedula').value;
+	var Grado = document.getElementById('Grado').value;
+	//.value es una funcion que asigna valores del Id a la variable 
+
+alert('Bienvenido/a a la U.E.P Galileo Galilei  ' + 
+	 'Alumno/a: ' +  Nombre  + ' ' + Apellido + '. '+ 'Tu año a cursar es: ' + Grado + '. '+
+	 'Disfruta de este periodo academico 2020-2021');
+}
+
+</script>
+
+</body>
+
+
+</html>

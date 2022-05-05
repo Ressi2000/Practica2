@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+     <title>U.E.P Galileo Galilei</title>
+     <meta charset="utf-8">
+     <meta name="descrition" content="Pagina dedicada a la Evaluacion Sumativa I"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+     
+     <link rel="icon" href="Imagenes/logo.png">
+
+<body>
+    <div class="container">
+    <div class="cabeza">
+    <img src="Imagenes/logo2.png">
+    <?php
+    echo "<h4> Alumno: $Nombre $Apellido <br> Docente Guía: Jesus Baron </h4> ";
+    echo "<h4 class='grado'> Año a cursar: $Grado </h4> ";
+    ?> 
+    <button onclick="salida()">Salir</button>
+</div>
+    <br> <br>
+    <hr>
+
+    <header class="showcase" id="animado">
+    <h2> Bienvenido a la casa de los sueños</h2>
+    </header>
+
+    <h2>CONTENIDO PROGRAMÁTICO</h2> <br>
+    <div class="news-cards">
+
+    <div>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/jR_3JsESJkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="https://www.definicionabc.com/wp-content/uploads/2014/08/ciencias-naturales-Biologia.jpg" id="animado2">
+        <h3>Ciencias de la Naturaleza</h3>
+        <p>Es la capacidad de los seres vivos de relacionarse con el medio en el que viven. Es una necesidad básica conocer el entorno que los rodea para así poder adaptarse a los cambios que continuamente suceden con el correr del tiempo.<a href="Naturaleza.html">Más aqui</a></p>
+
+        
+    </div>
+
+    <div>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/UIxOo7L9-lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/lasmanualidades/t/tipos-de-pintura-artistica-4.jpg" id="animado3">
+        <h3>Artística</h3>
+        <p>Se denomina arte griego al conjunto de manifestaciones artísticas producidas en la Antigua Grecia. Estas producciones, especialmente la arquitectura y la escultura, ejercieron una influencia extraordinaria en la cultura occidental hasta... <a href="Artistica.html">Más aqui</a> </p>
+        
+    </div>
+
+    <div>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/IkI4URGXsuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2020/03/280647.jpg" id="animado4">
+        <h3>Inglés</h3>
+        <p>Quizás el verbo más importante en inglés sea este, el verbo to be. No solo nos sirve para expresar nuestro estado de ánimo, sino que es uno de los verbos auxiliares del inglés.<a href="Ingles.html">Más aqui</a> </p>
+        
+    </div>
+
+    
+
+  </div>
+
+  <section class="banner2" id="animado5">
+
+    <div class="contenido">
+        <hr>
+        <img src="Imagenes/logo2.png">
+        <p>Ofreciendo excelencia y calidad en cada niño</p>
+
+    </div>
+
+  </section>
+
+</div>
+<script type="text/javascript">
+
+function salida() {
+
+    const resultado = confirm('¿Estas seguro de que deseas salir?');
+
+    if (resultado) {
+    
+    alert('Okay, si estas seguro.');
+    window.location='index.html';
+    
+    } else { 
+    
+    alert('Pareces indeciso');
+
+}
+}
+
+</script>
+<script src="main.js"></script>
+</body>
+<footer class="footer">
+    <p>Elaborado por: Ressi Figuera</p>
+  </footer>
+</html>
